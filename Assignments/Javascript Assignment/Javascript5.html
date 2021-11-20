@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type = "text/javascript">
+var yearsPrinted = 0;
+var Year =2021; 
+function leapYears() {
+    while (yearsPrinted < 20) { 
+        if ((Year % 4 === 0) && (!((Year % 100===0) && (Year % 400 !== 0)))) {
+            document.write(Year + "<br>");
+            yearsPrinted++;
+            Year++;
+        } else {
+            Year++;
+        }
+    }       
+}
+leapYears();
+</script>
+</head>
+</html>

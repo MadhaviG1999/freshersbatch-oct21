@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Bubble sort</title>
+<script>
+function sort(arr){
+    var changed;
+    do{
+        changed = false;
+        for(var i=0; i < arr.length-1; i++) {
+            if(arr[i] > arr[i+1]) {
+                var tmp = arr[i];
+                arr[i] = arr[i+1];
+                arr[i+1] = tmp;
+                changed = true;
+            }
+        }
+    } while(changed);
+}
+var arr = [5, 8, 11, 6, 1, 9, 3];
+sort(arr);
+document.write(arr);
+</script>
+</head>
+</html>

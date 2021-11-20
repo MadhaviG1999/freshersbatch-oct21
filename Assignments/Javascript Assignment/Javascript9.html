@@ -1,0 +1,17 @@
+<html>
+<head>
+<script>
+function newlist(alph,num) 
+{
+    var list =  [ ];
+    for(var i=0; i<alph.length; i++)
+   {
+        list.push(alph[i]);
+        list.push(num[i]);  
+   }
+ return list;
+}
+    document.write(newlist(['a', 'b', 'c'],[1, 2, 3]));
+</script>
+</head>
+</html>
