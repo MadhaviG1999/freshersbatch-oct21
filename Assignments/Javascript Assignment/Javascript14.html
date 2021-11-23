@@ -1,0 +1,43 @@
+<html>
+<head>
+<script>
+var arr = [];
+const arrlen = 10;
+for (i = 0; i < arrlen; i++) {
+    arr.push(Math.floor(Math.random() * 100));
+}
+document.write(arr);
+var max = arr[0];
+var min = arr[0];
+var count = 0,count=0;
+var sum=0;
+var avg=0;
+for (let i = 0; i < arrlen; i++) {
+    if (arr[i] > max) {
+        max = arr[i];
+    }
+    else if (arr[i] < min) {
+        min = arr[i];
+    }
+    if(arr[i]%2 ==0){
+        ecount++;
+    }
+    else{
+        count++;
+    }
+    sum= sum+arr[i];
+    avg= sum/arrlen;
+}
+document.write("<br>", max, "<br>", min);
+document.write(max, min);
+if(ecount>count){
+    document.write("Even Heads:"+ ecount);
+}
+else{
+    document.write("odd heads:"+ count);
+}
+document.write("Sum is:" + sum);
+document.write("Average is:" + avg);
+</script>
+</head>
+</html>
