@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+function square(x){
+    return x*x;
+}
+function Math_sqrt(x){
+    return(Math.sqrt(x));
+}
+function map(arr,square){
+    let b=[];
+    for (let i = 0; i < arr.length; i++){
+        b.push(square(arr[i]));
+    }
+    document.write(b,"<br>");
+}
+function map(arr,Math_sqrt){
+    let c=[];
+    for (let i = 0; i < arr.length; i++){
+        c.push(Math_sqrt(arr[i]));
+    }
+    document.write(c,"<br>");
+}
+map([1,2,3,4,5],square);
+map([1,4,9,16,25],Math_sqrt);
+</script>
+</head>
+</html>

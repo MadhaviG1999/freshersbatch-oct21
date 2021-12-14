@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function square(x){
+    return x*x;
+}
+function double(x){
+    return x*2;
+}
+function compose(f1,f2){
+    function composedValue(x){
+        return(f1(f2(x)));
+    }
+    let result = composedValue(x);
+    document.write(result,"<br>");
+    console.log(result);
+}
+let x = prompt("Enter a number:");
+var f = compose(square,double);
+var g = compose(double,square);
+</script>
+</head>
+</html>
