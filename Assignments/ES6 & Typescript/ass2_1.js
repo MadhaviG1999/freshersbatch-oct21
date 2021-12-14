@@ -1,0 +1,4 @@
+class Fibanoci{
+    private PrevNo;
+    
+}
